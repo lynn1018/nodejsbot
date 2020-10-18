@@ -1,1 +1,1 @@
-worker: python jara_bot.py
+web: python jara_bot.py
