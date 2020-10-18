@@ -6,7 +6,7 @@ from random import randint
 config = configparser.ConfigParser()
 config.read('config.ini')
  
-token = "NzYzMjgxMDA2Mzg3MTM0NTQ1.X31a1A.kpZV96INaFGBzF3II8e7BgD32P0"
+token = "NzYzMjgxMDA2Mzg3MTM0NTQ1.X31a1A.z-7pbitPGWeF3o32aVHJnsPUrZc"
 command_prefix = "자라야 "
 
 client = commands.Bot(command_prefix="자라야 ")
