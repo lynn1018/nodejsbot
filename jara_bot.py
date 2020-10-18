@@ -1,4 +1,5 @@
 import discord
+import os
 import configparser
 from discord.ext import commands
 from random import randint
@@ -6,7 +7,6 @@ from random import randint
 config = configparser.ConfigParser()
 config.read('config.ini')
  
-token = "NzYzMjgxMDA2Mzg3MTM0NTQ1.X31a1A.z-7pbitPGWeF3o32aVHJnsPUrZc"
 command_prefix = "자라야 "
 
 client = commands.Bot(command_prefix="자라야 ")
@@ -314,5 +314,5 @@ async def MEE6(ctx, *args):
 @client.command() 
 async def 크시(ctx, *args):
     await ctx.send("우리 서버엔 크시봇이 초대되어 있어! 명령어는 걔한테 직접 물어봐")
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
